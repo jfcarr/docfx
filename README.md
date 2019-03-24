@@ -8,7 +8,7 @@ I prefer to work in Linux.  :-)
 
 Steps:
 
-* Install Mono.
+* Install [Mono](https://www.mono-project.com/download/stable/).
 * Download docfx.zip from the [docfx releases page](https://github.com/dotnet/docfx/releases).
 * Extract contents of docfx.zip.  (I put mine in ~/bin/docfx-bin)
 * Add extraction folder to your path, e.g., `export PATH="$HOME/bin/docfx-bin:$PATH"`, in .profile.
@@ -56,3 +56,8 @@ See 'docfx help <command> to read about a specific subcommand guide
     serve           : Host a local static website
     template        : List or export existing template
 ```
+
+## Projects
+### static_toc
+
+This project is based on [docfx-seed](https://github.com/docascode/docfx-seed), and creates a static TOC documentation website.  (Doesn't require a web server.)
