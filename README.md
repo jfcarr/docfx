@@ -4,14 +4,28 @@ Learning DocFX
 
 ## Running in Linux
 
+I prefer to work in Linux.  :-)
+
 Steps:
 
 * Install Mono.
 * Download docfx.zip from the [docfx releases page](https://github.com/dotnet/docfx/releases).
-* Extract contents of docfx.zip.  (I put mine in ~/bin/docfx)
-* Add extraction folder to your path, e.g., `export PATH="$HOME/bin/docfx:$PATH"`, in .profile.
-* You'll be using mono to launch docfx, so while you're in .profile, you can add an alias to make this easier:  `alias docfx='mono ~/bin/docfx/docfx.exe'`
+* Extract contents of docfx.zip.  (I put mine in ~/bin/docfx-bin)
+* Add extraction folder to your path, e.g., `export PATH="$HOME/bin/docfx-bin:$PATH"`, in .profile.
 * Save .profile and reload it: `source .profile`.  (You'll need to restart your session to make this permanent.)
+
+Since we're using Mono to launch DocFX, you may want to set up a bash script with a symbolic link to make this easier:
+
+* `cd ~/bin`
+* `vi docfx.sh`  (Use a different editor if you prefer.)
+* Add lines:
+```
+#!/bin/bash
+
+mono $HOME/bin/docfx-bin/docfx.exe $*
+```
+* Save and exit
+* Add a symbolic link: `ln -s ~/bin/docfx.sh docfx`
 
 Verify that everything's set up correctly:
 
