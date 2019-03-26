@@ -4,7 +4,7 @@ Learning DocFX
 
 ## Running in Linux
 
-I prefer to work in Linux.  :-)
+I prefer to work in Linux.  :wink:
 
 Steps:
 
@@ -19,7 +19,7 @@ Since we're using Mono to launch DocFX, you may want to set up a bash script wit
 * `cd ~/bin`
 * `vi docfx.sh`  (Use a different editor if you prefer.)
 * Add lines:
-```
+```bash
 #!/bin/bash
 
 mono $HOME/bin/docfx-bin/docfx.exe $*
@@ -29,7 +29,7 @@ mono $HOME/bin/docfx-bin/docfx.exe $*
 
 Verify that everything's set up correctly:
 
-```
+```bash
 docfx help
 ```
 
