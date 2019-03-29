@@ -56,6 +56,10 @@
 			"default"
 		],
 		"postProcessors": [],
+		"globalMetadata": {
+			"_appTitle": "Simple Service Documentation",
+			"_enableSearch": true
+		},
 		"markdownEngineName": "markdig",
 		"noLangKeyword": false,
 		"keepFileLink": false,

@@ -17,7 +17,7 @@ srv-p:
 
 build:
 	$(DOCFXCMD) metadata
-	$(DOCFXCMD) build
+	$(DOCFXCMD) build -f
 
 clean:
 	@rm -rf obj/

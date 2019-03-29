@@ -1,5 +1,8 @@
 namespace src.Model
 {
+	/// <summary>
+	/// This is the Test Model.
+	/// </summary>
     public class TestModel
     {
 		/// <summary>
